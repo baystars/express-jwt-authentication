@@ -70,4 +70,5 @@ make get-external
 
 * [Authentication and Authorization with JWTs in Express\.js](https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/)
 * [jkasun/stack\-abuse\-express\-jwt: Handling Authorization in Express\.js using JWT](https://github.com/jkasun/stack-abuse-express-jwt)
+* [node\.js/expressでユーザ認証with JWT \- Qiita](https://qiita.com/AkihiroTakamura/items/ac4f1d3ec32effdd63d2)
 * [環境変数の代わりに \.env ファイルを使用する \(dotenv\) \| まくまくNode\.jsノート](https://maku77.github.io/nodejs/env/dotenv.html)
