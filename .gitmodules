@@ -1,0 +1,3 @@
+[submodule "stack-abuse-express-jwt"]
+	path = stack-abuse-express-jwt
+	url = git@github.com:jkasun/stack-abuse-express-jwt.git

@@ -1,0 +1,21 @@
+{
+  "name": "stack-abuse-express-jwt",
+  "version": "1.0.0",
+  "description": "* [Authentication and Authorization with JWTs in Express\\.js](https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/) * [jkasun/stack\\-abuse\\-express\\-jwt: Handling Authorization in Express\\.js using JWT](https://github.com/jkasun/stack-abuse-express-jwt)",
+  "main": "auth.js",
+  "scripts": {
+    "start-auth": "node auth.js",
+    "start": "node books.js",
+    "start-external": "node books-external.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
