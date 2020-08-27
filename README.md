@@ -41,7 +41,15 @@ make get
 
 ## 動作確認(外部認証サーバを使う場合)
 
-.envにて環境変数`JWT_SECRET_KEY`をサーバ側と合わせておく
+環境変数の準備
+
+```shell
+cp .env.sample .env
+vi .env
+```
+
+`JWT_SECRET_KEY`をサーバ側と同じにしておく
+
 
 APIサーバの起動
 
