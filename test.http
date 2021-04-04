@@ -1,0 +1,21 @@
+
+@HOST = http://localhost
+@PORT_AUTH = 3000
+@PORT = 4000
+@USER = john
+@PASSWORD = password123admin
+
+###
+# @name login
+POST {{HOST}}:{{PORT_AUTH}}/login
+Content-Type: application/json
+
+{
+    "username": "{{USER}}", "password": "{{PASSWORD}}"
+}
+
+###
+@TOKEN = {{login.response.body.$.accessToken}}
+POST {{HOST}}:{{PORT}}/books
+Authorization: Bearer {{TOKEN}}
+
