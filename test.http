@@ -1,9 +1,7 @@
 
-@HOST = http://localhost
+@HOST = {{$dotenv HOST}}
 @PORT_AUTH = 3000
 @PORT = 4000
-@USER = john
-@PASSWORD = password123admin
 
 ###
 # @name login
@@ -11,11 +9,11 @@ POST {{HOST}}:{{PORT_AUTH}}/login
 Content-Type: application/json
 
 {
-    "username": "{{USER}}", "password": "{{PASSWORD}}"
+    "username": "{{$dotenv USER}}",
+    "password":  "{{$dotenv PASSWORD}}"
 }
 
-###
+### Book Internal
 @TOKEN = {{login.response.body.$.accessToken}}
 POST {{HOST}}:{{PORT}}/books
 Authorization: Bearer {{TOKEN}}
-
